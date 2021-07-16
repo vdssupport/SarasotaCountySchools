@@ -1,0 +1,199 @@
+/*
+{{Color_1}}: (don't include the '#')
+{{Color_1_Shade}}: #{{Color_1_Shade}}; (goto http://www.color-hex.com/color/{{Color_1}} ; use the second Shade -- just needs to be a little bit darker.)
+{{Color_2}}: (don't include the '#')
+{{Color_2_Tint}}: #{{Color_2_Tint}}; (goto http://www.color-hex.com/color/{{Color_2}} ; find the color similar to e_e_e_) (Make sure this color is accessible by going to http://accessible-colors.com and checking Color_2_Tint on a background of both Color_1 and Color_2; select the suggested text color that works for both backgrounds)
+{{Logo_URL}}: {{Logo_URL}} i.e. www.wingate.edu/wp-content/uploads/2015/06/logo.png
+*/
+
+html {
+  background: #{{Color_1}};
+}
+
+.splash {
+  background-color: #ffffff;
+}
+
+.splash .loading path {
+  fill: #fff;
+}
+
+header.header-main {
+  background-color: #fff;
+  height:8.5em;
+}
+
+.logo {
+  background: url('//vdssupport.github.io/SarasotaCountySchools/2018-Logo-150.png') top center no-repeat;
+  display: inline-block;
+  max-width: 400px !important;
+  background-size: contain;
+}
+
+
+/*  photos/people panel background color */
+
+header.header-page {
+  background-color:#00a8de;
+}
+
+
+/* highlight below inactive tab  */
+
+.header-page .tabs li a {
+  border-bottom-color:#A9DEED};
+  color: #fff;
+}
+
+.header-page .tabs li a:hover,
+.header-page .tabs li a:focus
+{
+  color: #A9DEED;
+}
+
+
+
+/* highlight below active tab */
+.header-page .tabs a.active {
+    border-bottom-color: #005596;
+	color: #fff;
+}
+
+.header-page .tabs a {
+	color: #fff;
+}
+
+.header-page .buttons button {
+  background-color: #C3D156;
+  color: #005596;
+}
+
+.header-page button {
+  background-color: #ecac00;
+  color: #fff;
+}
+
+.header-page .buttons button:hover,
+.header-page .buttons button:focus 
+{
+  background-color: #C3D156;
+  color: #005596;
+
+  /* Alternative if the above doesn't look so great.
+  background-color: #{{Color_2}};
+  color: #fff;
+   */
+}
+
+.header-page .filters .filter:hover select,
+.header-page .filters .filter:focus-within select {
+    background-color: #;
+    color: #181818;
+}
+
+.header-page .filters .filter:hover:after,
+.header-page .filters .filter:focus-within:after {
+    color: #181818;
+}
+
+.header-page .filters select {
+	color: #fff;
+}
+
+button {
+    background-color: #{{Color_2}};
+}
+
+button:hover,
+button:focus {
+    background-color: #{{Color_2_Tint}};
+}
+
+router-view .buttons button.primary,
+#accept-terms,
+button.submit-login
+{
+    background-color: #{{Color_1}};
+}
+
+router-view .buttons button.primary:hover,
+router-view .buttons button.primary:focus,
+#accept-terms:hover,
+#accept-terms:focus,
+button.submit-login:hover,
+button.submit-login:focus
+{
+    background-color: #{{Color_1_Shade}};
+}
+
+.user-info {
+    color: #2A2623;
+}
+
+.user-info a {
+    color: #{{Color_2_Tint}};
+}
+
+.user-info a:hover,
+.user-info a:focus {
+    color: #2A2623;
+}
+
+.open-nav {
+    color: #ddd;
+}
+
+.open-nav:hover,
+.open-nav:focus
+{
+    color: #fff;
+}
+
+.admin-links .fa {
+    color: #fff; /*default #007bff*/
+}
+
+.admin-links a {
+	background: #005596;
+}
+	
+
+table th,
+table td {
+    background: #{{Color_2_Tint}};
+}
+
+.footer {
+    background: #{{Color_1}};	
+}
+
+/* Uncomment this block if the organization has a Plus Account.
+img.photos--preview {
+    border-bottom: 0px;
+}
+*/
+
+/* Uncomment this block to hide the Download photos button.
+   HOWEVER: if the client is downloading photos using an external tool (e.g. RapidCard Elite or the CloudCard Image Server), 
+	they should be migrated over to using the `EXTERNAL` download strategy rather than hiding the download button.
+
+*/
+
+button.download_button {
+	display: none;
+}
+
+
+.header-page h1 {
+    color: #fff;
+
+}
+
+
+
+/* sidebar background color*/
+.sidebar-main, .sidebar-mobile {
+	background: #005596;
+	
+}
+
