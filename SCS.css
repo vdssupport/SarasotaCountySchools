@@ -192,6 +192,12 @@ button.download_button {
 }
 
 
+/*logo size*/
+
+.logo {
+	height: 7em;
+}
+
 
 /* sidebar background color*/
 .sidebar-main, .sidebar-mobile {
