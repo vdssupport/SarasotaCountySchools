@@ -63,8 +63,10 @@ header.header-page {
 	color: #fff;
 }
 
+/* add / bulk import buttons*/
+
 .header-page .buttons button {
-  background-color: #C3D156;
+  background-color: #FFFFFF;
   color: #005596;
 }
 
@@ -76,8 +78,8 @@ header.header-page {
 .header-page .buttons button:hover,
 .header-page .buttons button:focus 
 {
-  background-color: #C3D156;
-  color: #005596;
+  background-color: #FFFFFF;
+  color: #00a8de;
 
   /* Alternative if the above doesn't look so great.
   background-color: #{{Color_2}};
